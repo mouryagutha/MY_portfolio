@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    margin-top: -60vh;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20vh;
+    color: rgb(255, 255, 255);
+}
+
+.body {
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.body p {
+    font-size: 27px;
+    margin: 0px;
+    margin-right: 1.5vw;
+    font-weight: 700;
+}
+
+.body span {
+    opacity: 0.2;
+}
