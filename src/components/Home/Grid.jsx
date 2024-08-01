@@ -99,11 +99,7 @@ const SocialsBlock = () => (
       }}
       className="col-span-6  relative overflow-hidden group cursor-pointer  opacity-5 backdrop-blur-3xl md:col-span-3"
     >
-    <img src="https://farmui.vercel.app/bg-back.png"
-    className="absolute w-[100%] h-[100%] left-0 -rotate-45
-     transition-all duration-200 blur-md
-      top-5 scale-150 z[-3]"
-     />
+   
         <a
           href="https://www.linkedin.com/in/mourya-kumar/"
           target="_blank"
@@ -117,17 +113,13 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6  relative overflow-hidden group cursor-pointer  opacity-5 backdrop-blur-3xl md:col-span-3"
+      className="col-span-6 bg-gray-500/10 md:col-span-3"
     >
-      <img src="https://tailwindcss.com/_next/static/media/docs@30.8b9a76a2.avif"
-    className="absolute w-[100%] h-[100%] left-0 -rotate-90
-     transition-all duration-200 blur-md
-      top-5 scale-125 opacity-65 z[-3]"
-     />
+      
       <a
         href="https://github.com/mouryagutha"
         target="_blank"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-3xl  text-white"
       >
         <SiGithub />
       </a>
@@ -135,7 +127,7 @@ const SocialsBlock = () => (
     <Block
       whileHover={{
         rotate: "-2.5deg",
-        scale: 1.1,
+        scale: 1.1, 
       }}
       className="col-span-6 bg-gray-500/10 md:col-span-3"
     >
