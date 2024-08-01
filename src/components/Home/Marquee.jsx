@@ -21,6 +21,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
+import { FaJava } from "react-icons/fa";
 
 const _ = {
   speed: 1,
@@ -30,6 +31,11 @@ const _ = {
 };
 
 const data = [
+  {
+    title: "Java",
+    tag: "Programming Language",
+    icon: <FaJava className="text-5xl" />, 
+  },
   {
     title: "JavaScript",
     tag: "Programming Language",
@@ -74,6 +80,11 @@ const data = [
 
 const data3 = [
   {
+    title: "Java",
+    tag: "Programming Language",
+    icon: <FaJava className="text-5xl" />, 
+  },
+  {
     title: "JavaScript",
     tag: "Programming Language",
     icon: <IoLogoJavascript className="text-5xl" />,
@@ -116,6 +127,11 @@ const data3 = [
 ];
 
 const data2 = [
+  {
+    title: "Java",
+    tag: "Programming Language",
+    icon: <FaJava className="text-5xl" />, 
+  },
   {
     title: "JavaScript",
     tag: "Programming Language",

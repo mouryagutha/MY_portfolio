@@ -55,13 +55,7 @@ const ProjectCard = ({ image, title, description }) => {
 
 const ProjectCards = () => {
   const projects = [
-    {
-      image: "/flashpost.png",
-      title: "FlashPost",
-      description:
-        "Feature-rich blogging platform with JWT authentication, Editor.js for blog editing, and built using React and Node.js.",
-      repoLink: "github.com/p-1000/blog",
-    },
+    
     {
       image: "/dvalidate.png",
       title: "Dvalidate",
