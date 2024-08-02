@@ -23,6 +23,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { FaJava } from "react-icons/fa";
 
+
 const _ = {
   speed: 1,
   threshold: 0.014,
@@ -76,6 +77,7 @@ const data = [
     icon: <FaGitAlt className="text-5xl" />,
     tag: "Version Control System",
   },
+
 ];
 
 const data3 = [
