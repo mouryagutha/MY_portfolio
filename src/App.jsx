@@ -9,6 +9,7 @@ import Project from "./components/projects/Project";
 import { Analytics } from "@vercel/analytics/react";
 import Article from "./components/Article/Article"
 
+
 function App() {
 
   return (
@@ -18,9 +19,10 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home  />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Project />} />
-          <Route path="/articles" element={<Article />} />
+          <Route path="/About" element={<About />} />
+          
+          <Route path="/Projects" element={<Project />} />
+          <Route path="/Articles" element={<Article />} />
         </Routes>
         {/* <RevealBento /> */}
       </Layout>

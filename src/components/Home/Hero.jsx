@@ -77,7 +77,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.1 }}
             >
-              I enjoy building web apps. My focus is Reactjs , tailwind css and Node js.
+              I enjoy building web apps. My focus is Reactjs , tailwind css , Node js  and java .
             </motion.p>
           </ScrollParallax>
         </div>

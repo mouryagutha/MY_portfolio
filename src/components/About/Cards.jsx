@@ -38,6 +38,12 @@ const Cards = () => {
 
       className="grid grid-cols-1  py-5 md:grid-cols-2 gap-4 w-[100%] justify-center">
         {cards.map((card, index) => (
+        <a
+          href={card.link}
+          target="_blank"
+          rel="noreferrer"
+          className="text-white"
+        >
           <motion.div
             key={index}
             whileTap={{ scale: 0.9 }}
@@ -50,22 +56,16 @@ const Cards = () => {
             transition-all duration-300 ease-in-out
                gap-2">
               {card.icon}
-              <a
-                href={card.link}
-                target="_blank"
-                rel="noreferrer"
-                className="text-white"
-              >
                 {card.title}
-              </a>
             </div>
             <div className="group-hover:text-blue-500 group-hover:text-lg ">
               <MdArrowOutward className=" " />
             </div>
           </motion.div>
+              </a>
         ))}
       </motion.div>
-      <div></div>
+
     </>
   );
 };
