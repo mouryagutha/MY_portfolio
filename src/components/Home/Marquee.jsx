@@ -22,6 +22,7 @@ import { SiExpress } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { FaJava } from "react-icons/fa";
+import { SiSpringboot } from "react-icons/si";
 
 
 const _ = {
@@ -67,15 +68,16 @@ const data = [
     title: "Tailwind CSS",
     tag: "CSS Framework",
   },
-  {
-    icon: <SiPostgresql className="text-5xl" />,
-    title: "PostgreSQL",
-    tag: "Database",
-  },
+
   {
     title: "Git",
     icon: <FaGitAlt className="text-5xl" />,
     tag: "Version Control System",
+  },
+  {
+    title: "Springboot",
+    icon: <SiSpringboot className="text-5xl" />,
+    tag: "java framework",
   },
 
 ];
@@ -117,9 +119,9 @@ const data3 = [
     tag: "CSS Framework",
   },
   {
-    icon: <SiPostgresql className="text-5xl" />,
-    title: "PostgreSQL",
-    tag: "Database",
+    title: "Springboot",
+    icon: <SiSpringboot className="text-5xl" />,
+    tag: "java framework",
   },
   {
     title: "Git",

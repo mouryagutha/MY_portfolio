@@ -3,6 +3,7 @@ import { FaReact ,FaDocker,FaGitAlt, FaNodeJs } from "react-icons/fa";
 import { SiHiveBlockchain,SiGooglegemini, SiRabbitmq, SiRedis ,SiWebrtc, SiSocketdotio, SiMongodb ,SiVite , SiSolidity , SiJsonwebtokens ,SiTailwindcss ,SiJavascript ,SiHtml5 ,SiCss3  } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
+import { LiaJava } from "react-icons/lia";
 
 
 const techIcons = {
@@ -28,6 +29,7 @@ const techIcons = {
   "javascript":<SiJavascript size={24}/>,
   "html5":<SiHtml5 size={24}/>,
   "css3":<SiCss3 size={24}/>,
+  "java":<LiaJava size={24}/>,
   
 
   };

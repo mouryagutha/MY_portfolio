@@ -63,6 +63,13 @@ const ProjectCards = () => {
         "Blockchain Certificate Validation System ensuring secure certificate issuance and verification.",
       // Add more specific details about technologies if needed
     },
+    {
+      image: "/java.png",
+      title: "java_master",
+      description:
+        "Java Master: A comprehensive collection of Java implementations focused on mastering Data Structures and Algorithms through clean code and efficient problem-solving",
+      // Add more specific details about technologies if needed
+    },
     // Add more projects here as needed
   ];
 

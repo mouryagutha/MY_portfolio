@@ -48,6 +48,47 @@ const projects = [
     techStack: ["Node.js", "Docker", "React", "TailwindCSS"],
     live: "https://github.com/mouryagutha/Docker-project",
   },
+  {
+    image: "/cal.png",
+    title: "calculator using java",
+    description:
+      "A Java-based calculator application with a user-friendly Swing UI, supporting basic arithmetic operations.",
+    link: "https://github.com/mouryagutha/Calculator-using-java.git",
+    techStack: [
+      "java",
+      
+      
+    ],
+    live: "https://github.com/mouryagutha/Calculator-using-java.git",
+  },
+  {
+    image: "/java.png",
+    title: "java_master",
+    description:
+      "Java Master: A comprehensive collection of Java implementations focused on mastering Data Structures and Algorithms through clean code and efficient problem-solving",
+    link: "https://github.com/mouryagutha/java_master.git",
+    techStack: [
+      "java",
+      
+      
+    ],
+    live: "https://github.com/mouryagutha/java_master.git",
+  },
+  {
+    image: "/dic.png",
+    title: "Dictionary",
+    description:
+      "Developed a dynamic dictionary application using JavaScript, HTML, and CSS. The app features a simple, user-friendly UI and fetches word meanings in real-time via an external API",
+    link: "https://github.com/mouryagutha/Dictionary-apk.git",
+    techStack: [
+      "html5",
+      "css3",
+      "javascript",
+      
+      
+    ],
+    live: "https://dictionary-apk.vercel.app/",
+  },
 ];
 
 const Project = () => {
