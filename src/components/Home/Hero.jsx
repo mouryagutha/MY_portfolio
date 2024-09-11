@@ -69,16 +69,18 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              Software engineer, full-stack developer, and a tech enthusiast.
+              Software engineer, full-stack developer, Cyber security and a tech enthusiast.
             </motion.p>
             <motion.p
               className="text-sm md:text-base pb-1 lg:pb-0"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.1 }}
-            >
-              I enjoy building web apps. My focus is Reactjs , tailwind css , Node js  and java .
+              >
+              I enjoy building web apps. My focus is Reactjs, Tailwind CSS, Node.js, and Java. <br />
+              Passionate cybersecurity enthusiast skilled in solving TryHackMe challenges and applying real-time hacking tools to identify and mitigate security threats.
             </motion.p>
+
           </ScrollParallax>
         </div>
 
