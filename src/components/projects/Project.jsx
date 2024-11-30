@@ -78,7 +78,7 @@ const projects = [
     image: "/dic.png",
     title: "Dictionary",
     description:
-      "Developed a dynamic dictionary application using JavaScript, HTML, and CSS. The app features a simple, user-friendly UI and fetches word meanings in real-time via an external API",
+      "Developed a dynamic dictionary application using JavaScript, HTML, and CSS. The app features a simple, user-friendly UI and fetches word meanings in real-time via an external APIw",
     link: "https://github.com/mouryagutha/Dictionary-apk.git",
     techStack: [
       "html5",
