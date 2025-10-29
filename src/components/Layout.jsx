@@ -1,5 +1,3 @@
-import React from "react";
-import CustomCursor from "./cursor/Cursor";
 
 const Layout = ({ children }) => {
   return (

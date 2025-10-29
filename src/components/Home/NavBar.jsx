@@ -1,6 +1,6 @@
-import React from "react";
+import { useState, useEffect } from "react";
 export default function FUIHeroSectionWithImage() {
-  const [state, setState] = React.useState(false);
+  const [state, setState] = useState(false);
 
   const navigation = [
     { title: "Features", path: "javascript:void(0)" },
@@ -9,7 +9,7 @@ export default function FUIHeroSectionWithImage() {
     { title: "Pricing", path: "javascript:void(0)" },
   ];
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.onclick = (e) => {
       const target = e.target;
       if (!target.closest(".menu-btn")) setState(false);

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import cv from "/mourya.pdf";
+import cv from "/mourya kumar G.pdf";
 
 const Nav = () => {
   const [state, setState] = useState(false);

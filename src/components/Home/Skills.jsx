@@ -1,12 +1,4 @@
-import React from "react";
 import Marquee from "./Marquee";
-import { FaJava, FaNode, FaReact } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiFramer, SiNextdotjs, SiVercel } from "react-icons/si";
-import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
-import { GrGolang } from "react-icons/gr";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 const Skills = () => {
   return (

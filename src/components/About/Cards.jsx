@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
@@ -39,13 +38,13 @@ const Cards = () => {
       className="grid grid-cols-1  py-5 md:grid-cols-2 gap-4 w-[100%] justify-center">
         {cards.map((card, index) => (
         <a
+          key={index}
           href={card.link}
           target="_blank"
           rel="noreferrer"
           className="text-white"
         >
           <motion.div
-            key={index}
             whileTap={{ scale: 0.9 }}
             className="p-4 rounded-lg px-8 border cursor-pointer border-white/10
             hover:border-white/40 group

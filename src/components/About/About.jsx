@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Cards from "./Cards";
 import { ScrollParallax } from 'react-just-parallax';

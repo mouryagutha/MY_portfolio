@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCards from "./ProjectCards";
 import { ScrollParallax } from "react-just-parallax";
 

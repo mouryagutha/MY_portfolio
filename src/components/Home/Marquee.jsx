@@ -1,16 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
 // "use client";
 import {
   useWindowSize,
-  useWindowWidth,
-  useWindowHeight,
 } from "@react-hook/window-size";
 import { useSpring, motion } from "framer-motion";
 import normalizeWheel from "normalize-wheel";
 import { useEffect, useRef } from "react";
 import { useRafLoop } from "react-use";
 import {
-  IoGitCommit,
   IoLogoJavascript,
   IoLogoNodejs,
   IoLogoReact,
@@ -86,59 +82,6 @@ const data = [
     tag: "cyber scurity",
   },
 
-];
-
-const data3 = [
-  {
-    title: "Java",
-    tag: "Programming Language",
-    icon: <FaJava className="text-5xl" />, 
-  },
-  {
-    title: "JavaScript",
-    tag: "Programming Language",
-    icon: <IoLogoJavascript className="text-5xl" />,
-  },
-  {
-    icon: <IoLogoReact className="text-5xl" />,
-    title: "React Js",
-    tag: "Frontend Library",
-  },
-  {
-    title: "Node Js",
-    tag: "Javascript Runtime",
-    icon: <IoLogoNodejs className="text-5xl" />,
-  },
-  {
-    icon: <DiMongodb className="text-5xl" />,
-    title: "MongoDB",
-    tag: "Database",
-  },
-  {
-    icon: <SiPostman className="text-5xl" />,
-    title: "PostMan",
-    tag: "API Development Tool",
-  },
-  {
-    icon: <RiTailwindCssFill className="text-5xl" />,
-    title: "Tailwind CSS",
-    tag: "CSS Framework",
-  },
-  {
-    title: "Springboot",
-    icon: <SiSpringboot className="text-5xl" />,
-    tag: "java framework",
-  },
-  {
-    title: "Git",
-    icon: <FaGitAlt className="text-5xl" />,
-    tag: "Version Control System",
-  },
-  {
-    title: "TryHackme",
-    icon: <SiTryhackme  className="text-5xl" />,
-    tag: "cyber scurity",
-  },
 ];
 
 const data2 = [
@@ -263,11 +206,11 @@ const MyMarquee = ({ x, direction, speedDetails, cardData }) => {
     speed.set(0);
   };
 
-  const onDrag = (e, info) => {
+  const onDrag = (_e, info) => {
     speed.set(_.dragFactor * -info.delta.x);
   };
 
-  const onDragEnd = (e) => {
+  const onDragEnd = () => {
     slowDown.current = false;
     marquee.current.classList.remove("drag");
     x.current = _.speed;
@@ -345,7 +288,7 @@ const MarqueeItem = ({ children, speed }) => {
     rect.current = item.current.getBoundingClientRect();
   }, [width, height]);
 
-  const loop = (e) => {
+  const loop = () => {
     x.current -= speed.get();
     setX();
   };

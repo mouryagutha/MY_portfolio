@@ -1,4 +1,3 @@
-import React from 'react'
 import BackgroundGrid from "../utils/BgGrid";
 import { motion } from "framer-motion";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaReact ,FaDocker,FaGitAlt, FaNodeJs } from "react-icons/fa";
 import { SiHiveBlockchain,SiGooglegemini, SiRabbitmq, SiRedis ,SiWebrtc, SiSocketdotio, SiMongodb ,SiVite , SiSolidity , SiJsonwebtokens ,SiTailwindcss ,SiJavascript ,SiHtml5 ,SiCss3  } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";

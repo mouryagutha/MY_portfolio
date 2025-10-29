@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import BackgroundGrid from "../utils/BgGrid";
@@ -110,8 +109,8 @@ const Project = () => {
           </h1>
           <div>
             <p className="text-white/80 leading-7 tracking-wide w-[60%] mx-10 mt-4 font-light">
-              Dive into some of the cool projects I've been working on. Click
-              the "View Project" button to explore them on GitHub.
+              Dive into some of the cool projects I&apos;ve been working on. Click
+              the &quot;View Project&quot; button to explore them on GitHub.
             </p>
           </div>
         </motion.div>

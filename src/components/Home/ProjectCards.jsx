@@ -1,7 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineExpandMore } from "react-icons/md";
-import {Link } from "react-router-dom";
 
 const ProjectCard = ({ image, title, description }) => {
   return (

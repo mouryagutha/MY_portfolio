@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   addDoc,
   getDocs,
@@ -9,11 +9,9 @@ import {
 } from "firebase/firestore";
 import FingerprintJS from "@fingerprintjs/fingerprintjs";
 import { usersCollectionRef } from "./firebase"; // Adjust the import as needed
-import { FaMapMarkerAlt, FaUserCircle, FaRegSmile } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 const UserGreeting = () => {
-  const [fpHash, setFpHash] = useState("");
   const [userDetails, setUserDetails] = useState(null);
   const [location, setLocation] = useState("");
   const [ip, setIp] = useState("");
@@ -76,11 +74,11 @@ const UserGreeting = () => {
       const fp = await FingerprintJS.load();
       const visitor = await fp.get();
       const { visitorId } = visitor;
-      setFpHash(visitorId);
       await fetchUserLocation();
       await handleAddOrUpdateData(visitorId);
     };
     setFp();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -96,7 +94,7 @@ const UserGreeting = () => {
           </p>
           <p className="flex   text-left space-x-2 text-base">
             <span className="font-semibold">
-              Ah, you're from {location}! What a wonderful place.
+              Ah, you&apos;re from {location}! What a wonderful place.
             </span>
           </p>
           <p className="flex my-3 text-left space-x-2 text-base">

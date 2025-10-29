@@ -1,6 +1,6 @@
 // cursorStateContext.js
 
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const CursorStateContext = createContext();
 
