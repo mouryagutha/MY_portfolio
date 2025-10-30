@@ -5,12 +5,12 @@ import { ScrollParallax } from 'react-just-parallax';
 const About = () => {
   return (
     <>
-      <div className="text-white lg:mx-14 h-screen">
+      <div className="text-white w-full h-screen px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, skewX: 50 }}
           animate={{ opacity: 1, skewX: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="lg:mx-10 mx-4 pb-6 lg:pb-10 font-light text-base"
+          className="pb-6 lg:pb-10 font-light text-base"
         >
           <h1 className="text-slate-400 border px-1 lg:px-3 border-slate-700
            py-1 text-sm rounded-full w-fit">
@@ -18,7 +18,7 @@ const About = () => {
           </h1>
         </motion.div>
 
-        <div className="lg:mx-10 mx-5 mt-3 flex  flex-col md:flex-row  gap-5 lg:gap-12 items-start">
+        <div className="mt-3 flex flex-col md:flex-row gap-5 lg:gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export const RevealBento = () => {
   return (
-    <div className="min-h-screen bg-black px-4 py-12 text-zinc-50">
+    <div className="min-h-screen bg-black px-4 md:px-8 lg:px-16 py-12 text-zinc-50">
       <h1 className="text-center text-2xl font-bold -mt-10 py-20">
         Contact Me
       </h1>
@@ -18,7 +18,7 @@ export const RevealBento = () => {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
+        className="w-full max-w-7xl mx-auto grid grid-flow-dense grid-cols-12 gap-4"
       >
         <HeaderBlock />
         <SocialsBlock />

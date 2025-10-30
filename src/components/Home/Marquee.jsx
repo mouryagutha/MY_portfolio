@@ -147,9 +147,9 @@ export default function Marquee() {
 
   return (
     <main
-      className="flex flex-col  h-60 bg-black
+      className="flex flex-col h-60 bg-black
       overflow-hidden
-        max-w-screen  items-center text-center"
+        w-screen items-center text-center"
       onWheel={onWheel}
     >
       <div className="">

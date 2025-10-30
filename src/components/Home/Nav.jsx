@@ -104,7 +104,7 @@ const Nav = () => {
             : ""
         }`}
       >
-        <div className="gap-x-10 rounded-2xl items-center max-w-screen-xl mx-auto px-4 md:flex md:px-6">
+        <div className="gap-x-10 rounded-2xl items-center w-full px-4 md:flex md:px-8 lg:px-16">
           <Brand />
           <motion.div
             initial={{ y: -20, opacity: 0 }}

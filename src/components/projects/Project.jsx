@@ -154,7 +154,7 @@ const Project = () => {
   return (
     <>
       <BackgroundGrid />
-      <div className="text-white lg:mx-14 py-10 min-h-screen">
+      <div className="text-white w-full py-10 min-h-screen px-4 md:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -162,13 +162,13 @@ const Project = () => {
           className="-mt-8"
         >
           <h1
-            className="text-3xl font-medium font-mono mx-6
+            className="text-3xl font-medium font-mono
          text-slate-300 border-white uppercase p-4"
           >
             My Awesome Projects
           </h1>
           <div>
-            <p className="text-white/80 leading-7 tracking-wide w-[60%] mx-10 mt-4 font-light">
+            <p className="text-white/80 leading-7 tracking-wide max-w-3xl mt-4 font-light">
               Dive into some of the cool projects I&apos;ve been working on. Click
               the &quot;View Project&quot; button to explore them on GitHub.
             </p>
@@ -178,13 +178,13 @@ const Project = () => {
           initial={{ opacity: 0, skewX: 50 }}
           animate={{ opacity: 1, skewX: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-10 pb-10 font-light text-base"
+          className="pb-10 font-light text-base"
         >
           <h1 className="text-slate-400 mt-8 border px-3 border-slate-700 py-1 text-sm rounded-full w-fit">
             Featured Projects
           </h1>
         </motion.div>
-        <div className="mx-10  grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div key={index}>
               <ProjectCard {...project} />

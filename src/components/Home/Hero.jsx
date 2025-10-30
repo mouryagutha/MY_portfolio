@@ -8,7 +8,7 @@ import UserGreeting from "../../firebase/UserGreet";
 const Hero = () => {
   return (
     <>
-    <div className="relative lg:w-[88%] lg:mx-auto lg:mt-1 items-center justify-center min-h-screen">
+    <div className="relative w-full items-center justify-center min-h-screen">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20"></div>
       
@@ -21,7 +21,7 @@ const Hero = () => {
 
       {/* Content Overlay */}
       <motion.div
-        className="absolute inset-0 p-28 lg:p-1 flex flex-col justify-center text-white px-4 lg:px-28"
+        className="absolute inset-0 flex flex-col justify-center text-white px-4 md:px-8 lg:px-16 py-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -88,7 +88,7 @@ const Hero = () => {
         </div>
 
         {/* Call to Action Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between mx-4 lg:mx-8 mt-4 lg:mt-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between mt-4 lg:mt-8">
           <div className="flex flex-col sm:flex-row gap-4 items-center mb-4 lg:mb-0">
             <motion.button
               className="backdrop-blur-md bg-white/20 border border-white/30 hover:bg-white/30 transition-all duration-200 hover:scale-95

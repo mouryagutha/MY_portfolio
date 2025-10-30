@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="">
+      <div className="w-full overflow-x-hidden">
       <Layout>
         <Nav />
         <Routes>

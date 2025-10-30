@@ -76,7 +76,7 @@ const ArticleCard = ({ title, description, image, link }) => (
 
 const Article = () => {
   return (
-    <div className="flex flex-col gap-10 p-4 lg:p-10 min-h-screen">
+    <div className="flex flex-col gap-10 px-4 md:px-8 lg:px-16 py-10 min-h-screen w-full">
       <BackgroundGrid />
       
       <motion.div
@@ -89,7 +89,7 @@ const Article = () => {
         <p className="text-gray-300 text-lg">Sharing knowledge and insights about web development</p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
         {articles.map((article, index) => (
           <ArticleCard key={index} {...article} />
         ))}
