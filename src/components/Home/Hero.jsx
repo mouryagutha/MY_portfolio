@@ -78,8 +78,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.1 }}
               >
-              I enjoy building web apps. My focus is Reactjs, Tailwind CSS, Node.js, and Java. <br />
-              Passionate cybersecurity enthusiast skilled in solving TryHackMe challenges and applying real-time hacking tools to identify and mitigate security threats.
+              I enjoy building web apps and solving complex problems. My focus is React.js, Tailwind CSS, Node.js, and Java. <br />
+              Active hackathon participant with experience in competitive programming and building innovative solutions under tight deadlines.
             </motion.p>
 
           </ScrollParallax>
