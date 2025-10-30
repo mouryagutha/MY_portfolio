@@ -19,7 +19,6 @@ import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { FaJava } from "react-icons/fa";
 import { SiSpringboot } from "react-icons/si";
-import { SiTryhackme } from "react-icons/si";
 
 
 const _ = {
@@ -76,11 +75,6 @@ const data = [
     icon: <SiSpringboot className="text-5xl" />,
     tag: "java framework",
   },
-  {
-    title: "TryHackme",
-    icon: <SiTryhackme  className="text-5xl" />,
-    tag: "cyber scurity",
-  },
 
 ];
 
@@ -134,11 +128,6 @@ const data2 = [
     title: "Git",
     icon: <FaGitAlt className="text-5xl" />,
     tag: "Version Control System",
-  },
-  {
-    title: "TryHackme",
-    icon: <SiTryhackme  className="text-5xl" />,
-    tag: "cyber scurity",
   },
 ];
 
