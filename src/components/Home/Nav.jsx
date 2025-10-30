@@ -22,18 +22,18 @@ const Nav = () => {
 
   const Brand = () => (
     <div className="flex items-center justify-between md:block">
-      <a href="/">
+      <a href="/" className="hover:opacity-80 transition-all duration-300">
         <img
           src="/Zoro.jpeg"
           className="rounded-full grayscale"
-          width={45}
-          height={45}
+          width={35}
+          height={35}
           alt="mourya"
         />
       </a>
       <div className="md:hidden">
         <button
-          className="menu-btn text-white hover:text-white"
+          className="menu-btn text-white hover:text-white backdrop-blur-md bg-white/10 p-2 rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300"
           onClick={() => setState(!state)}
         >
           {state ? (
@@ -71,15 +71,15 @@ const Nav = () => {
   );
 
   return (
-    <motion.header className="sticky top-0 z-50 mb-10">
+    <motion.header className="sticky top-0 z-50 mb-6">
       <nav
-        className={`pb-5 md:text-sm ${
+        className={`py-2 md:text-sm backdrop-blur-xl bg-white/5 border-b border-white/10 ${
           state
-            ? "absolute z-50 top-0 inset-x-0 shadow-lg rounded-xl border mx-2 mt-2"
+            ? "absolute z-50 top-0 inset-x-0 shadow-2xl rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 mx-2 mt-2"
             : ""
         }`}
       >
-        <div className="gap-x-14 rounded-2xl items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
+        <div className="gap-x-10 rounded-2xl items-center max-w-screen-xl mx-auto px-4 md:flex md:px-6">
           <Brand />
           <motion.div
             initial={{ y: -20, opacity: 0 }}
@@ -90,18 +90,15 @@ const Nav = () => {
               type: "spring",
               stiffness: 30,
             }}
-            className={`flex-1 text-white/90 items-center lg:mt-8 md:mt-0 md:flex ${
+            className={`flex-1 text-white/90 items-center lg:mt-4 md:mt-0 md:flex ${
               state ? "block" : "hidden"
             } `}
           >
-            <ul className="mx-auto flex lg:flex-row flex-col w-full justify-center items-center space-y-6 md:space-x-6 md:space-y-0 lg:rounded-full dark:bg-zinc-800/10 lg:dark:[border:1px_solid_rgba(255,255,255,.1)] lg:dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset]
-            px-6 py-4 text-sm font-medium text-zinc-800 shadow-lg
-             shadow-zinc-800/5 lg:ring-1 ring-zinc-900/5 lg:backdrop-blur-2xl
-              dark:text-zinc-200 dark:ring-white/10 lg:w-fit ">
+            <ul className="mx-auto flex lg:flex-row flex-col w-full justify-center items-center space-y-4 md:space-x-3 md:space-y-0 lg:rounded-full backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl px-4 py-2 text-sm font-medium text-white lg:w-fit">
               {navigation.map((item, idx) => (
                 <li
                   key={idx}
-                  className="text-lg lg:text-sm text-slate-300 hover:text-white flex"
+                  className="text-base lg:text-sm text-white/80 hover:text-white flex backdrop-blur-sm hover:bg-white/10 px-3 py-1.5 rounded-full transition-all duration-300"
                 >
                   {item.title === "Cv Download" ? (
                     <a href={item.path} className="block" download>

@@ -85,7 +85,7 @@ const About = () => {
           >
           <ScrollParallax >
             <img
-              src="/mourya.jpg"
+              src="/mourya.png"
               className="rounded-lg rotate-1
               hover:-rotate-1 transition-all
                duration-500 cursor-grab object-cover

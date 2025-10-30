@@ -3,7 +3,67 @@ import ProjectCard from "./ProjectCard";
 import BackgroundGrid from "../utils/BgGrid";
 
 const projects = [
-  
+  {
+    image: "/s1.png",
+    title: "SQL Runner - Interactive SQL Query Execution Platform",
+    description:
+      "A modern, full-stack web application that allows users to write, execute, and visualize SQL queries in real-time with Firebase authentication, animated UI, query history, and comprehensive database management features.",
+    link: "https://github.com/mouryagutha/SQL-Compiler.git",
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "Python",
+      "SQLite",
+      "Firebase",
+      "TailwindCSS",
+    ],
+    live: "https://sql-compiler-y7zn.vercel.app",
+  },
+  {
+    image: "/tf.png",
+    title: "Todo Summary Assistant",
+    description:
+      "A full-stack application that helps users manage their todos and get AI-powered summaries sent to Slack. Features real-time updates using Supabase and OpenAI integration for intelligent todo summarization.",
+    link: "https://github.com/mouryagutha/-Todo-Summary-Assistant.git",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "MongoDB",
+    ],
+    live: "https://github.com/mouryagutha/-Todo-Summary-Assistant.git",
+  },
+  {
+    image: "/3d.png",
+    title: "Zeotap Doc - Google Sheets Clone",
+    description:
+      "A modern Google Sheets Clone with spreadsheet UI, drag functions, formula support (SUM, AVERAGE, COUNT, MAX, MIN), data quality functions, cell formatting, and Google Authentication via Firebase.",
+    link: "https://github.com/mouryagutha/Googlesheet_clone.git",
+    techStack: [
+      "React",
+      "javascript",
+      "Firebase",
+      "TailwindCSS",
+    ],
+    live: "https://googlesheet-clone-sigma.vercel.app",
+  },
+  {
+    image: "/cone.png",
+    title: "Disney+ Clone",
+    description:
+      "A full-stack Disney+ streaming service clone with user authentication, personalized movie recommendations, search functionality, movie details with cast and reviews, favorites list, and responsive design optimized for all devices.",
+    link: "https://github.com/mouryagutha/Disney_clone.git",
+    techStack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "javascript",
+    ],
+    live: "https://disney-clone-peach.vercel.app",
+  },
 
   {
     image: "/b.png",
@@ -126,14 +186,9 @@ const Project = () => {
         </motion.div>
         <div className="mx-10  grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-            >
+            <div key={index}>
               <ProjectCard {...project} />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

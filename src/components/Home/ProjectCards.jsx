@@ -53,22 +53,30 @@ const ProjectCard = ({ image, title, description }) => {
 
 const ProjectCards = () => {
   const projects = [
-    
     {
-      image: "/dvalidate.png",
-      title: "Dvalidate",
+      image: "/s1.png",
+      title: "SQL Runner",
       description:
-        "Blockchain Certificate Validation System ensuring secure certificate issuance and verification.",
-      // Add more specific details about technologies if needed
+        "Interactive SQL Query Execution Platform with Firebase authentication, real-time query execution, and AI-powered features.",
     },
     {
-      image: "/java.png",
-      title: "java_master",
+      image: "/tf.png",
+      title: "Todo Summary Assistant",
       description:
-        "Java Master: A comprehensive collection of Java implementations focused on mastering Data Structures and Algorithms through clean code and efficient problem-solving",
-      // Add more specific details about technologies if needed
+        "AI-powered todo management with Slack integration, real-time updates using Supabase and OpenAI for intelligent summarization.",
     },
-    // Add more projects here as needed
+    {
+      image: "/3d.png",
+      title: "Zeotap Doc - Google Sheets Clone",
+      description:
+        "Modern spreadsheet application with formula support, drag functions, cell formatting, and Google Authentication.",
+    },
+    {
+      image: "/cone.png",
+      title: "Disney+ Clone",
+      description:
+        "Full-stack streaming service clone with user authentication, personalized recommendations, and responsive design.",
+    },
   ];
 
   return (
