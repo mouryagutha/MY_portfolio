@@ -22,15 +22,40 @@ const Nav = () => {
 
   const Brand = () => (
     <div className="flex items-center justify-between md:block">
-      <a href="/" className="hover:opacity-80 transition-all duration-300">
-        <img
-          src="/Zoro.jpeg"
-          className="rounded-full grayscale"
-          width={35}
-          height={35}
-          alt="mourya"
-        />
-      </a>
+      <div className="flex items-center gap-3 group">
+        <a href="/" className="hover:opacity-80 transition-all duration-300 relative">
+          <img
+            src="/Zoro.jpeg"
+            className="rounded-full grayscale"
+            width={35}
+            height={35}
+            alt="mourya"
+          />
+          {/* Pulsing ring effect */}
+          <div className="absolute inset-0 rounded-full border-2 border-blue-400/50 animate-ping"></div>
+        </a>
+        
+        {/* Animated guiding text */}
+        <motion.a 
+          href="/"
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="hidden md:flex items-center gap-1.5 group-hover:gap-2 transition-all duration-300"
+        >
+          <span className="text-[10px] font-mono text-white/60 group-hover:text-blue-400/90 tracking-wider uppercase transition-colors duration-300">
+            ← back to home
+          </span>
+          <motion.span
+            animate={{ x: [0, 3, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="text-blue-400/70 text-xs"
+          >
+            ⚡
+          </motion.span>
+        </motion.a>
+      </div>
+      
       <div className="md:hidden">
         <button
           className="menu-btn text-white hover:text-white backdrop-blur-md bg-white/10 p-2 rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300"
