@@ -70,7 +70,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              Software engineer, full-stack developer, Cyber security and a tech enthusiast.
+              Software engineer, full-stack developer and a tech enthusiast.
             </motion.p>
             <motion.p
               className="text-sm md:text-base pb-1 lg:pb-0"
