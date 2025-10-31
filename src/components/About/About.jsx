@@ -5,7 +5,7 @@ import { ScrollParallax } from 'react-just-parallax';
 const About = () => {
   return (
     <>
-      <div className="text-white w-full h-screen px-4 md:px-8 lg:px-16">
+      <div className="text-white w-full min-h-screen px-4 md:px-8 lg:px-16 py-8">
         <motion.div
           initial={{ opacity: 0, skewX: 50 }}
           animate={{ opacity: 1, skewX: 0 }}
@@ -38,43 +38,68 @@ const About = () => {
                 More about me...
               </h1>
             </motion.div>
-            <div className="text-white/80 leading-7 tracking-wide  mt-4 font-light">
-              <p className=" py-2">
+            <div className="text-white/80 leading-7 tracking-wide mt-4 font-light space-y-4">
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="p-4 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg"
+              >
                 I am a full-stack Developer with a passion for web development.
                 I have experience in building web applications using JavaScript,
                 Reactjs  and MongoDB, as well as  git. As
                 a self-taught developer, I am always eager to learn new
                 technologies and improve my skills. I thrive on solving complex
                 problems and am constantly seeking new challenges.
-              </p>
-              <p className="  py-2">
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="p-4 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg"
+              >
                 I am currently pursuing a Bachelor of Technology in Computer
                 Science and Engineering at Lovely Professional University.
                 Originally from madanapalle, I have a deep love for anything
                 related to computers, especially web development.
-              </p>
-              <p className="  py-2">
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.0 }}
+                className="p-4 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg"
+              >
                 My journey into the world of coding started with a fascination
                 for how web applications work. This curiosity led me to explore
                 various technologies and ultimately fall in love with full-stack
                 development. Currently, I am learning Go to further expand my
                 backend development skills.
-              </p>
-              <p className="  py-2">
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.2 }}
+                className="p-4 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg"
+              >
                 I love computers and web development more than anything, except
                 for my passion for fiction, whether it's movies or novels. Anime
                 holds a special place in my heart, with favorites like Mangekyo
                 Sharingan, Bankai, and Aizen. Yokoso watashino soul society
                 encapsulates my enthusiasm for creating innovative solutions.
-              </p>
-              <p className="  py-2">
+              </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.4 }}
+                className="p-4 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:shadow-lg"
+              >
                 I believe in having fun and enjoying movies, while maintaining a
                 rational outlook on life. I am currently looking for
                 opportunities to work as a Full Stack Developer where I can
                 contribute to innovative projects and continue to grow
                 professionally. I am excited to bring my expertise and passion
                 for web development to a dynamic team.
-              </p>
+              </motion.p>
             </div>
           </motion.div>
           <motion.div
